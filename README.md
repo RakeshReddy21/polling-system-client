@@ -1,30 +1,42 @@
 
-# Polling App - Backend
+# Polling App - Frontend
 
 ## Overview
-This project is the backend for a real-time polling system that allows teachers to create live polls and students to participate in them. The backend is built with **Node.js**, **Express.js**, and **MongoDB** for data storage. **Socket.IO** is used for real-time communication.
+This project is a real-time polling system that allows teachers to create live polls and students to participate in them. The frontend is built with **React** (using Vite as the build tool). **Socket.IO** is used for real-time communication between the server and clients.
+
+## Features
+- **Teacher Features**:
+  - Create polls with options and set a timer for voting.
+  - View real-time results as students vote.
+  - View poll history.
+  - Kick students out of the room.
+
+- **Student Features**:
+  - Join a poll room created by a teacher.
+  - Vote in real-time on polls.
+  - Redirect to a "kicked out" page if removed by the teacher.
 
 ## Tech Stack
-- **Node.js** (Express.js for server-side logic)
-- **MongoDB** (for database storage)
+- **React** (with Vite for fast development)
 - **Socket.IO** (for real-time communication)
+- **Bootstrap** (for styling)
+- **Session Storage** (for session management)
 
 ---
 
-## Backend Setup
+## Frontend Setup
 
 ### Prerequisites
 Make sure you have the following installed:
 - Node.js (developed with 22.5.1)
 - npm
-- MongoDB
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/saran-mani/intervue-poll-backend.git
-   cd intervue-poll-backend
+   git clone https://github.com/saran-mani/intervue-poll-frontend.git
+   cd intervue-poll-frontend
    ```
 
 2. Install dependencies:
@@ -32,21 +44,14 @@ Make sure you have the following installed:
    npm install
    ```
 
-3. Install and start the MongoDB service:
+3. Start the development server:
    ```bash
-   mongod
-   ```
-
-4. Start the backend server:
-   ```bash
-   npm start
+   npm run dev
    ```
 
 ## Running the Application
 
-1. The backend will be available at:
+1. The frontend will be available at:
    ```
-   http://localhost:3000
+   http://localhost:5173/
    ```
-
-2. The frontend communicates with the backend via Socket.IO and API endpoints for poll management.
