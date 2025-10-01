@@ -37,5 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "debug": "^4.3.4"
+  },
+  "overrides": {
+    "debug": "^4.3.4"
   }
 }
