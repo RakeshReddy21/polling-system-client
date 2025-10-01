@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "CI=false GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,6 +45,7 @@
     "debug": "^4.3.4"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=18.0.0 <19.0.0",
+    "npm": ">=8.0.0"
   }
 }
